@@ -2,7 +2,7 @@ function getElement(id){
     const elements = document.getElementById(id)
     return elements;
 }
-
+// Heart Count//
 const hardIcon =document.getElementsByClassName('heard-icon');
 for(const buttonCard of hardIcon){
     buttonCard.addEventListener('click', function(){
@@ -14,6 +14,25 @@ for(const buttonCard of hardIcon){
     })
 }
 
+//  Copy Count////
+const copyIcon =document.getElementsByClassName('btn-copy');
+for(const buttonCopy of copyIcon){
+    buttonCopy.addEventListener('click', function(){
+
+        const serviceNumber = buttonCopy.parentNode.parentNode.children[1].children[3].innerText;
+      alert(`নম্বরটি কপি হয়েছে   ${serviceNumber}`);
+        const quantity = document.getElementById('copy-count').innerText
+        const currentCopy = Number(quantity) + 1;
+    getElement("copy-count").innerText = currentCopy;
+
+    navigator.clipboard.writeText(serviceNumber);
+        
+    })
+}
+
+
+/// Cart process ///
+
 const callBtn =document.getElementsByClassName('btn-call');
 for(const buttonCard of callBtn){
     buttonCard.addEventListener('click', function(){
@@ -22,7 +41,7 @@ for(const buttonCard of callBtn){
         const balanceCoin = Number(currentCoin); 
 
         if(balanceCoin < 20){
-            alert("আপনার পর্যাপ্ত কয়েন নেই ! কল করতে কমপক্ষে ২0 কয়েন লাগবে। ");
+            alert("❌আপনার পর্যাপ্ত কয়েন নেই ! কল করতে কমপক্ষে ২0 কয়েন লাগবে। ");
         return;
     }
       const serviceName = buttonCard.parentNode.parentNode.children[1].children[0].innerText;
@@ -53,7 +72,6 @@ for(const buttonCard of callBtn){
 }
 
 document.getElementById("history-clear-btn").addEventListener("click", function(){
-    console.log("clicked");
     const historyContrainer = getElement("history-contrainer");
     historyContrainer.innerHTML = "";
 })
