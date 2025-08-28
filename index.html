@@ -23,13 +23,13 @@
                 <h1 class="text-[#006747] text-2xl font-bold">Emergency <br>Secvice</h1>
             </div>
 
-            <div class="header-right flex items-center mr-5 p-5 gap-4">
+            <div class="header-right lg:flex items-center mr-5 p-5 gap-4">
                 <div class="flex items-center bg-[#41ff6b1a] px-8 py-2 gap-3 rounded-full">
-                    <p class="font-semibold">0</p>
+                    <p id="total-life" class="font-semibold">0</p>
                     <img class="w-8" src="./photos/heart.png" alt="">
                 </div>
                 <div class="flex items-center bg-[#41ff6b1a] px-8 py-3 gap-3 rounded-full">
-                    <p>100</p>
+                    <p id="coin">100</p>
                     <img class="w-6" src="./photos/coin.png" alt="">
                 </div>
                 <h2 class="bg-[#00A63E] rounded-full text-white font-semibold px-8 py-3">2 Copy</h2>
@@ -50,61 +50,61 @@
     <main class="main-section bg-gray-100">
         <div class="eHotline-section w-11/12 mx-auto py-3 grid grid-cols-12 gap-8">
             <div class="col-span-9">
-                <div class="flex justify-between py-10">
+                <div class="lg:flex justify-between py-10">
                     <!-- Card-1 -->
                     <div class="card-contrainer p-5 bg-white rounded-2xl">
                         <div class="flex justify-between items-center">
                             <img class="w-12 bg-red-200 p-2 rounded-xl" src="./photos/emergency.png" alt="" />
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="heard-icon fa-regular fa-heart"></i>
                         </div>
                         <div>
-                            <h1 class="card-title font-semibold text-2xl mt-7">জাতীয় জরুরি সেবা</h1>
+                            <h1 id="national-eService" class="card-title font-semibold text-2xl mt-7">জাতীয় জরুরি সেবা</h1>
                             <p class="text-gray-700">National Emergency</p><br>
-                            <h2 class="emergency-number font-bold text-2xl py-3">999</h2>
+                            <h1 class="emergency-number font-bold text-2xl py-3">999</h1>
                             <p class="inline bg-gray-200 text-gray-500 p-2 rounded-xl">সার্বজনীন</p>
                         </div>
 
                         <div class="card-actions justify-between py-6">
-                            <div class="badge badge-outline px-13 py-3"><i class="fa-regular fa-copy"></i> copy</div>
-                            <div class="badge badge-outline px-13 py-3 bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</div>
+                            <button class="btn-copy badge badge-outline px-13 py-3"><i class="fa-regular fa-copy"></i> copy</button>
+                            <button class="btn-call badge badge-outline px-13 py-3 bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <!-- Card-2 -->
                     <div class="card-contrainer p-5 bg-white rounded-2xl">
                         <div class="flex justify-between items-center">
-                            <img class="w-12 bg-red-200 p-2 rounded-xl" src="./photos/emergency.png" alt="" />
-                            <i class="fa-regular fa-heart"></i>
+                            <img class="w-12 bg-green-100 p-2 rounded-xl" src="./photos/police.png" alt="" />
+                            <i class="heard-icon fa-regular fa-heart"></i>
                         </div>
                         <div>
-                            <h1 class="card-title font-semibold text-2xl mt-7">জাতীয় জরুরি সেবা</h1>
-                            <p class="text-gray-700">National Emergency</p><br>
+                            <h1 class="card-title font-semibold text-2xl mt-7">পুলিশ</h1>
+                            <p class="text-gray-700">Police</p><br>
                             <h2 class="emergency-number font-bold text-2xl py-3">999</h2>
-                            <p class="inline bg-gray-200 text-gray-500 p-2 rounded-xl">সার্বজনীন</p>
+                            <p class="inline bg-gray-100 text-gray-500 p-2 rounded-xl">পুলিশ</p>
                         </div>
 
                         <div class="card-actions justify-between py-6">
-                            <div class="badge badge-outline px-13 py-3"><i class="fa-regular fa-copy"></i> copy</div>
-                            <div class="badge badge-outline px-13 py-3 bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</div>
+                            <button class="btn-copy badge badge-outline px-13 py-3"><i class="fa-regular fa-copy"></i> copy</button>
+                            <button class="btn-call badge badge-outline px-13 py-3 bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                     <!-- Card-3 -->
                     <div class="card-contrainer p-5 bg-white rounded-2xl">
                         <div class="flex justify-between items-center">
-                            <img class="w-12 bg-red-200 p-2 rounded-xl" src="./photos/emergency.png" alt="" />
-                            <i class="fa-regular fa-heart"></i>
+                            <img class="w-12 bg-red-100 p-2 rounded-xl" src="./photos/fire-service.png" alt="" />
+                            <i class="heard-icon fa-regular fa-heart"></i>
                         </div>
                         <div>
-                            <h1 class="card-title font-semibold text-2xl mt-7">জাতীয় জরুরি সেবা</h1>
-                            <p class="text-gray-700">National Emergency</p><br>
+                            <h1 class="card-title font-semibold text-2xl mt-7">ফায়ার সার্ভিস</h1>
+                            <p class="text-gray-700">Fire Services</p><br>
                             <h2 class="emergency-number font-bold text-2xl py-3">999</h2>
-                            <p class="inline bg-gray-200 text-gray-500 p-2 rounded-xl">সার্বজনীন</p>
+                            <p class="inline bg-gray-200 text-gray-500 p-2 rounded-xl">ফায়ার</p>
                         </div>
 
                         <div class="card-actions justify-between py-6">
-                            <div class="badge badge-outline px-13 py-3"><i class="fa-regular fa-copy"></i> copy</div>
-                            <div class="badge badge-outline px-13 py-3 bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</div>
+                            <button class="btn-copy badge badge-outline px-13 py-3"><i class="fa-regular fa-copy"></i> copy</button>
+                            <button class="btn-call badge badge-outline px-13 py-3 bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@
             <div class="col-span-3">
                 <div class="call-history bg-white mt-10 rounded-2xl border">
                     <div class="flex justify-between items-center p-5">
-                        <h1><i class="fa-solid fa-clock-rotate-left"></i> Call History</h1>
+                        <h1 class="font-semibold text-xl"><i class="fa-solid fa-clock-rotate-left"></i> Call History</h1>
                         <button class="bg-[#00A63E] rounded-full text-white font-semibold px-8 py-3">Clear</button>
                     </div>
                     <div class="bg-gray-100 m-5 px-5 py-3 rounded-xl flex justify-between items-center">
@@ -131,6 +131,9 @@
             </div>
         </div>
     </main>
+
+    <!-- JavaScript -->
+     <script src="./script.js"></script>
 
 </body>
 </html>                 
