@@ -52,6 +52,7 @@ for(const buttonCard of callBtn){
     getElement("coin").innerText = totalBalanceCoin;
 
     const currentTime = new Date().toLocaleTimeString();
+    
     const historyContrainer = getElement("history-contrainer");
     const newHistory = document.createElement("div");
         newHistory.innerHTML =`
